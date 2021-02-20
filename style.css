@@ -50,7 +50,6 @@ body {
 	text-align: center;
 	letter-spacing: 0.04em;
 	color: rgba(255, 255, 255, 0.6);
-	display: flex;
 	margin: 16px auto;
 }
 
@@ -70,6 +69,7 @@ body {
 }
 
 .text-massege {
+	margin-bottom: 8px;
 	margin-top: 32px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -177,11 +177,11 @@ body {
 	letter-spacing: 0.04em;
 	color: #1F3F68;
 	margin-bottom: 24px;
-	margin-top: 40px;
+	margin-top: 34px;
 }
 
 .heading-h4-massge {
-	margin-bottom: 48px;
+	margin-bottom: 16px;
 }
 
 .body {
@@ -320,12 +320,10 @@ body {
 	padding-left: 20px;
 }
 
-.box {
-	margin: 0 113px;
-}
+
 
 .allcontact {
-	margin: 0 212px;
+	align-items: center;
 	display: flex;
 	justify-content: space-around;
 }
@@ -334,7 +332,12 @@ body {
 	display: flex;
 	align-self: center;
 	flex-direction: column;
-	width: 40%;
+	width: 300px;
+}
+
+.contact-img {
+	margin-bottom: 22px;
+	margin-top: 78px;
 }
 
 .contact-us {
@@ -347,9 +350,10 @@ body {
 }
 
 .massage {
+	box-sizing: border-box;
+	width: 540px;
 	display: flex;
 	flex-direction: column;
-	width: 60%;
 	background: #FFFFFF;
 	box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
 	border-radius: 10px;
@@ -367,7 +371,8 @@ body {
 }
 
 .other-massege {
-	flex-grow: 1;
+
+	height: 144px;
 }
 
 .input::placeholder {
@@ -389,6 +394,14 @@ body {
 	text-align: center;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	margin-top: 72px;
+	padding: 23px 0;
+	letter-spacing: 0.04em;
+}
+
+.container-map {
+	margin: 95px auto;
+	width: 940px;
 }
 
 @media (max-width: 1024px) {
@@ -440,7 +453,7 @@ body {
 	.final-button {
 		text-align: center;
 	}
-	
+
 	.final-section-button {
 		padding: 7px 30px
 	}
@@ -459,6 +472,28 @@ body {
 
 	.text-rights {
 		margin-top: 40px;
+	}
+
+	.allcontact {
+		flex-direction: column;
+	}
+
+	.container-map {
+		width: 100%;
+	}
+
+	.contact-us {
+		margin-bottom: 0;
+	}
+
+	.text-contact-us {
+		width: 65%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.contact {
+		margin-bottom: 64px;
 	}
 }
 
@@ -606,4 +641,35 @@ body {
 		padding-bottom: 32px;
 	}
 
+	.heading-h2-contact {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.text-contact-us {
+		width: 90%;
+		margin: 32px auto;
+	}
+
+	.massage {
+		width: 100%;
+		padding: 35px;
+	}
+
+	.other-massege {
+		height: 90px;
+	}
+
+	.contact {
+		margin-bottom: 32px;
+	}
+
+	.button {
+		margin-top: 35px;
+		padding: 15px 0;
+	}
+
+	.container-map {
+		margin: 32px auto;
+	}
 }
